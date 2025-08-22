@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url(background-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -30,4 +38,9 @@ nav a {
     margin-left: 20px;
     color: #fff;
     text-decoration: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
 }
