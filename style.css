@@ -3,44 +3,131 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
+body{
+    background-color: rgb(24, 19, 50);
+    width: 100%;
+}
+.logo button{
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 20px;
+    font-style: italic;
+    background-color: rgb(24, 19, 50);
+    color: rgb(234, 227, 227);
+    border: 0;
+    border-radius: 10%;
+    margin-left: 10rem;
+    margin-top: 20px;
+    padding: 6px;
+}
+.header{
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url(background-img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #16213e;
+.nav{
+     margin-inline-start: 20rem;
+     margin-top: 30px;
 }
-
-header a{
-    color: #fff;
+.nav a{
+    font-family: cursive;
     text-decoration: none;
-}
+    color:  rgb(234, 227, 227);
+    margin-right: 7rem;
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+   
+   
 
-nav a {
-    margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
 }
 
 .main{
     display: flex;
     justify-content: center;
+    color:  rgb(234, 227, 227);
+
+    
+}
+.main-left{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+    font-style: oblique;
+    line-height: 3.2;
+    margin-left: 40px;
+    margin-top: 10rem;
+}
+.highlight {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 16px;
+  
+}
+.main-middle{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.main-right{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+    font-style: oblique;
+    line-height: 2.2;
+    margin-top: 10rem;
+    margin-right: 40px;
+}
+.main button{
+    padding: 10px 22px;
+    background-color: rgb(214, 97, 237);
+    border: 0;
+    border-radius: 5%;
+}
+.main button:hover{
+    background-color: rgb(44, 38, 58);
+}
+.main button:active{
+    background-color: rgb(64, 14, 79);
+}
+
+.Exp{
+    color:  rgb(234, 227, 227);
+}
+
+.tools{
+    color:  rgb(234, 227, 227);
+}
+
+.about{
+    color:  rgb(234, 227, 227);
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    color: rgb(56, 54, 54);
+    margin-top: 15rem;
+}
+.last-one{
+    font-family: cursive;
+    width: 350px;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 25px;
+}
+.last-two{
+    font-family: cursive;
+    width: 200px;
+    margin-left: 20px;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 25px;
+}
+.mail{
+    margin-left: 40px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: rgb(64, 14, 79);
+    border: 0;
+    color: rgb(234, 227, 227);;
 }
