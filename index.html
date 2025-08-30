@@ -10,21 +10,21 @@
 <body>
     <header class="header">
         <div class="logo">
-            <button onclick="document.location='index.html'">Moh</button>
+            <button onclick="document.location='#main'">Moh</button>
         </div>
         <nav class="nav">
-            <a href="about.html">About</a>
-            <a href="work.html">Workflow</a>
-            <a href="contact.html">Contact</a>
+            <a href="#about">About</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <div class="main">
+    <section id="main">
         <div class="main-left">
             <h1>Moyinoluwa Popoola</h1>
             <p class="highlight">Junior Web Developer & Aspiring Product Manager</p>
             <p class="intro">I build clean, responsive, and user-focused websites while growing my expertise in product design and development.</p>
             <p class="intro">Passionate about creating solutions that make an impact.</p>
-            <button onclick="document.location='contact.html'">Contact Me</button>
+            <button onclick="document.location='#contact.html'">Contact Me</button>
         </div>
         <div class="main-middle">
             <img src="Main img.png" alt="steaming cup and laptop" style="width: 75%;">
@@ -33,8 +33,120 @@
             <h2>Frontend Developer</h2>
             <p>moyinp02@gmail.com</p>
             <p>+2347059787350</p>
-            <i class="fa-brands fa-linkedin" style="color:  rgb(234, 227, 227);"></i> <i class="fa-brands fa-whatsapp" style="color:  rgb(234, 227, 227);"></i>
+            <a href="https://www.linkedin.com/in/Moyinoluwa-Popoola" >
+                <i class="fa-brands fa-linkedin" style="color:  rgb(234, 227, 227);"></i>
+            </a>
+            <a href="https://wa.me/2347059787350">
+                <i class="fa-brands fa-whatsapp" style="color:  rgb(234, 227, 227);"></i>
+            </a>
         </div>
-    </div>
+    </section>
+    <section id="about">
+        <div class="about-me-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-me-content">
+            <p class="intro-paragraph">
+                I am a dedicated web developer with a background in transport management and logistics. Currently, I am expanding my expertise in front-end development and product management, building projects that combine creativity, functionality, and user-centered design. I thrive on creating visually appealing and highly functional websites that not only meet but exceed client expectations. My goal is to craft digital experiences that are intuitive, engaging, and perform seamlessly across all devices.
+                
+            </p>
+            <p class="details-paragraph">
+                My journey has been about exploring diverse skills from coding and product design to management and aligning them to create meaningful digital experiences. I've had the opportunity to work on various projects, ranging from intricate e-commerce solutions to informative personal portfolios. I am passionate about solving real-world problems with technology and continuously improving my craft through hands-on learning. I believe in a collaborative approach, working closely with clients to understand their vision and translate it into a robust online presence.
+            </p>
+        </div>
+    </section>
+    <section id="workflow">
+        <div class="workflow-header">
+            <h2>Workflow</h2>
+        </div>
+        <div class="workflow-container">
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <span class="step-number">01</span>
+                    <p class="highlight">Junior Web Developer (Freelance)
+                    2024 – Present</p>
+                    <ul>
+                        <li>Designed and built responsive websites using HTML, CSS, Bootstrap, and JavaScript.</li>
+                        <li>Contributed to product planning and feature development for transportation-related applications.</li>
+                    </ul>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">02</span>
+                    <p class="highlight">Coding Instructor (Freelance)
+                    2024 – Present</p>
+                    <ul>
+                        <li>Taught basic coding concepts (HTML, CSS, Scratch) to kids aged 5 to 9 in a fun and interactive way.</li>
+                        <li>Developed lesson plans and guided students through project-based learning.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="workflow-complete">
+                <p>Completed!</p>
+            </div>
+        </div>
+        <div class="tools">
+            <div class="tool">
+                <img src="images\html5 logo.png" alt="HTML5" style="width: 100px;">
+            </div>
+            <div class="tool">
+                <img src="images/css3 logo.png" alt="CSS3" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/javascript logo.png" alt="JavaScript" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/bootstrap logo.png" alt="Bootstrap" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/tailwind logo.png" alt="Tailwind CSS" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/rodocodo logo.png" alt="Rodocodo" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/scratch logo.png" alt="Scratch" style="width: 100px;">                
+            </div>
+            <div class="tool">
+                <img src="images/tynker logo.png" alt="Tynker" style="width: 100px;">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="left">
+            <h1>Let's connect</h1>
+            <p>moyinp02@gmail.com</p>
+            <p>+234 705 97 873 50</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        </div>
+
+        <div class="right">
+            <h2>Send me a message</h2>
+        <form id="contactForm">
+            <div class="form">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name.." required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Hey, let's collaborate.." required></textarea>
+            </div>
+                <button type="submit">Send</button>
+      </form>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
