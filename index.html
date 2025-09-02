@@ -12,10 +12,15 @@
         <div class="logo">
             <button onclick="document.location='#main'">Moh</button>
         </div>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#workflow">Workflow</a>
-            <a href="#contact">Contact</a>
+        <nav class="nav" >
+            <div id="bars" class="bars">
+                <i class="fa-solid fa-bars" style="color: #23c56e;"></i>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section id="main">
@@ -26,8 +31,17 @@
             <p class="intro">Passionate about creating solutions that make an impact.</p>
             <button onclick="document.location='#contact.html'">Contact Me</button>
         </div>
-        <div class="main-middle">
-            <img src="Main img.png" alt="steaming cup and laptop" style="width: 75%;">
+        <div class="main-middle-container">
+            <img src="Main img.png" alt="steaming cup and laptop"  style="width: 75%;" class="main-img">
+            <div class="main-text-overlay">
+                <h1>Moyinoluwa Popoola</h1>
+                <h2>Frontend Developer</h2>
+                <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/Moyinoluwa-Popoola"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/2347059787350"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="main-right">
             <h2>Frontend Developer</h2>

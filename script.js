@@ -11,3 +11,19 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     messageElement.style.color = "green";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bars = document.getElementById("bars");
+  const navLinks = document.getElementById("nav-links");
+
+  bars.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Optional: Hide the menu when a link is clicked
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      navLinks.classList.remove("active");
+    }
+  });
+});

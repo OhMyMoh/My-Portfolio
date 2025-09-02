@@ -56,6 +56,11 @@ body{
     margin-inline-start: 20rem;
     margin-top: 30px;
 }
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 .nav a{
     font-family: 'Montserrat';
     text-decoration: none;
@@ -65,6 +70,12 @@ body{
 }
 .nav a:hover{
   color: #23c56e;
+}
+.bars{
+  display: none; 
+  font-size: 2rem;
+  color: #23c56e;
+  cursor: pointer;
 }
 section{
     min-height: 100vh;
@@ -111,6 +122,15 @@ section{
 .main-middle{
     margin-top: 50px;
     margin-left: 30px;
+}
+.main-middle-container {
+    position: relative; /* Establishes positioning context for the children */
+    width: 100%;
+    max-width: 800px;
+}
+.main-img {
+    width: 100%;
+    height: auto;
 }
 .main-right{
     font-family: monospace;
@@ -231,7 +251,6 @@ section{
 
 
 .about-me-content {
-  /* display: flex; */
   flex-direction: column; 
   gap: 40px; 
 }
@@ -360,38 +379,125 @@ textarea {
 }
 
 
-/* Responsive adjustments
+
+
 @media (max-width: 768px) {
-  .about-me-section {
-    padding: 60px 40px;
-  }
+    .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .logo button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .nav {
+        margin-inline-start: 0;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background-color: #333447;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .nav-links.active { 
+        display: flex;
+    }
+    .nav a {
+        margin: 10px 0;
+    }
+    .bars {
+        display: block; 
+        margin-right: 20px;
+    }
+    #main {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .main-left, .main-right {
+        margin: 20px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .main-middle {
+        margin: 20px 0;
+        order: -1; 
+    }
+    .main-left h1, .main-right h2 {
+        font-size: 2rem;
+    }
+    .main-right .social-icons {
+        margin-top: 20px;
+    }
+    .highlight {
+      font-size: 16px;
+    }
 
-  .about-me-header h2 {
-    font-size: 2.5rem;
-  }
+    #about {
+        padding: 40px 20px;
+    }
+    .about-me-header h2 {
+        font-size: 2.5rem;
+    }
+    .intro-paragraph, .details-paragraph {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
 
-  .about-me-content .intro-paragraph {
-    font-size: 1.1rem;
-    max-width: 100%;
-  }
+    #workflow {
+        padding: 20px;
+    }
+    .workflow-header h2 {
+        font-size: 2rem;
+    }
+    .workflow-step p {
+        padding-right: 0;
+    }
+    .workflow-step ul {
+        padding-top: 0.5rem;
+        padding-right: 0;
+        padding-left: 20px;
+    }
 
-  .about-me-content .details-paragraph {
-    font-size: 1rem;
-    max-width: 100%;
-  }
+    .tools {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .tool {
+        margin: 10px;
+    }
+    .tool img {
+        width: 60px; 
+    }
+
+    #contact {
+        flex-direction: column;
+        margin-top: 5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .left, .right {
+        margin: 20px;
+    }
+    .left h1, .right h2 {
+        font-size: 2rem;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .form-group {
+        margin-right: 0;
+    }
+    .right button {
+        padding: 0.7rem 3rem;
+        margin-left: 0;
+    }
 }
 
-@media (max-width: 480px) {
-  .about-me-section {
-    padding: 40px 20px;
-  }
-
-  .about-me-header h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
-  .about-me-content {
-    gap: 20px;
-  }
-} */
