@@ -12,18 +12,19 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const bars = document.getElementById("bars");
-  const navLinks = document.getElementById("nav-links");
 
-  bars.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.getElementById("open-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  
+  openBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
   });
 
-  // Optional: Hide the menu when a link is clicked
-  navLinks.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") {
-      navLinks.classList.remove("active");
-    }
+ 
+  closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
   });
 });
