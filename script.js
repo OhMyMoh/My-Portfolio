@@ -13,18 +13,26 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const openBtn = document.getElementById("open-btn");
-  const closeBtn = document.getElementById("close-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+
+const barsMenu = document.querySelector('.bars-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+barsMenu.addEventListener('click', () => {
+  barsMenu.classList.toggle('active');
+  offScreenMenu.classList.toggle('active');
+})
+// document.addEventListener("DOMContentLoaded", () => {
+//   const openBtn = document.getElementById("open-btn");
+//   const closeBtn = document.getElementById("close-btn");
+//   const mobileMenu = document.getElementById("mobile-menu");
 
   
-  openBtn.addEventListener("click", () => {
-    mobileMenu.classList.add("active");
-  });
+//   openBtn.addEventListener("click", () => {
+//     mobileMenu.classList.add("active");
+//   });
 
  
-  closeBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-  });
-});
+//   closeBtn.addEventListener("click", () => {
+//     mobileMenu.classList.remove("active");
+//   });
+// });

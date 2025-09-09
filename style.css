@@ -26,50 +26,7 @@ body{
     background-color: #333447;
     width: 100%;
 }
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%; 
-  width: 70%;
-  height: 100vh;
-  background-color: #1e1e2f;
-  color: #fff;
-  transition: right 0.3s ease-in-out;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
 
-.mobile-menu.active {
-  right: 0; 
-}
-
-.mobile-menu .menu-header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-}
-
-.mobile-menu .mobile-nav-links {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-menu .mobile-nav-links li {
-  margin: 15px 0;
-}
-
-.mobile-menu .mobile-nav-links li a {
-  text-decoration: none;
-  color: #b3b4b7;
-  font-size: 18px;
-  transition: color 0.2s;
-}
-
-.mobile-menu .mobile-nav-links li a:hover {
-  color: #23c56e;
-}
 
 .logo button{
     font-family: 'Montserrat Alternates', sans-serif;
@@ -372,7 +329,7 @@ section{
 }
 
 .social-icons a:hover {
-  color: #555; /* change this to a highlight color */
+  color: #b0b0b0; 
 }
 
 
@@ -445,6 +402,73 @@ textarea {
 
 
 @media (max-width: 480px) {
+    .off-screen-menu {
+  position: fixed;
+  top: 0;
+  right: -450%;
+  max-width: 450px; 
+  width: 70%;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  transition: .3s ease;
+}
+
+.off-screen-menu.active {
+  right: 0; 
+}
+
+nav{
+  padding: 1rem;
+  display: flex;
+  background-color: #1f1f2f;
+}
+
+.bars-menu{
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+
+.bars-menu-span{
+  height: 5px;
+  width: 100%;
+  background-color: #23c56e;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.bars-menu-span:nth-child(1) {
+  top: 25%;
+}
+.bars-menu-span:nth-child(3) {
+  top: 75%;
+}
+.bars-menu:active:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.bars-menu:active:nth-child(2) {
+  opacity: 0;
+}
+.bars-menu:active:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
     .header {
         justify-content: space-between;
         align-items: center;
