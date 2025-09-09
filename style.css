@@ -27,7 +27,9 @@ body{
     width: 100%;
 }
 
-
+.off-screen-menu{
+  display: none;
+}
 .logo button{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 30px;
