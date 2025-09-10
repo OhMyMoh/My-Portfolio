@@ -27,9 +27,77 @@ body{
     width: 100%;
 }
 
-.off-screen-menu{
-  display: none;
+.bars {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
 }
+
+.off-screen-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 450px;
+    height: 100vh;
+    background-color: #1e1e2f;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.off-screen-menu ul li {
+    margin: 20px 0;
+}
+
+.off-screen-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.off-screen-menu ul li a:hover {
+    color: #23c56e;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-icons {
+    margin-bottom: 15px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
 .logo button{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 30px;
@@ -407,138 +475,229 @@ textarea {
 
 
 
+
 @media (max-width: 480px) {
-  h1 h2{
-    font-family: 'Montserrat Alternates', sans-serif;
+  .header {
+      flex-direction: column;
+      text-align: center;
   }
-  p{
-    font-family: 'Montserrat', sans-serif;
+  
+  .logo button {
+      margin-top: 10px;
   }
-  .off-screen-menu {
-  position: fixed;
-  top: 0;
-  right: -450%;
-  max-width: 450px; 
-  width: 70%;
-  height: 100vh;
-  background-color: #1e1e2f;
-  color: #fff;
-  transition: right 0.3s ease-in-out;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  padding: 20px;
-  transition: .3s ease;
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333447;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 100;
+  }
+  
+  .nav-links.active {
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin: 10px 0;
+  }
+  
+  .nav-links a {
+      color: white;
+  }
+  
+  .bars {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  
+  #main {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 5rem;
+  }
+  
+  .main-left, .main-right {
+      display: none;
+  }
+  
+  .main-middle {
+      order: -1;
+      margin: 20px 0;
+  }
+  
+  .main-img {
+      margin-right: 0;
+  }
+  
+  .main-text-overlay {
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+      width: 90%;
+  }
+  
+  .pee, .dee {
+      font-size: 48px;
+  }
+  
+  .highlight {
+      font-size: 14px;
+  }
+  
+  #about {
+      padding: 40px 20px;
+  }
+  
+  .about-me-header h2 {
+      font-size: 2rem;
+  }
+  
+  .intro-paragraph, .details-paragraph {
+      margin-left: 0;
+      text-align: center;
+  }
+  
+  #workflow {
+      padding: 40px 20px;
+  }
+  
+  .workflow-header h2 {
+      font-size: 2rem;
+  }
+  
+  .workflow-step p {
+      padding-right: 0;
+  }
+  
+  .workflow-step ul {
+      padding-top: 0.5rem;
+      padding-right: 0;
+      padding-left: 20px;
+  }
+  
+  .tools {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+  }
+  
+  .tool {
+      margin: 10px;
+  }
+  
+  .tool img {
+      width: 60px;
+      height: 60px;
+  }
+  
+  #contact {
+      flex-direction: column;
+      margin-top: 5rem;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .left, .right {
+      margin: 20px;
+      width: 100%;
+  }
+  
+  .left h1, .right h2 {
+      font-size: 1.8rem;
+  }
+  
+  .form {
+      flex-direction: column;
+  }
+  
+  .form-group {
+      margin-right: 0;
+  }
+  
+  .right button {
+      padding: 0.7rem 3rem;
+      margin-left: 0;
+  }
 }
 
-.off-screen-menu.active {
-  right: 0; 
-}
-
-nav{
-  padding: 1rem;
-  display: flex;
-  background-color: #1f1f2f;
-}
-
-.bars-menu{
-  height: 50px;
-  width: 50px;
-  margin-left: auto;
-  position: relative;
-}
-
-.bars-menu-span{
-  height: 5px;
-  width: 100%;
-  background-color: #23c56e;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: .3s ease;
-}
-
-.bars-menu-span:nth-child(1) {
-  top: 25%;
-}
-.bars-menu-span:nth-child(3) {
-  top: 75%;
-}
-.bars-menu:active:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.bars-menu:active:nth-child(2) {
-  opacity: 0;
-}
-.bars-menu:active:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-    .header {
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-    }
-    .logo button {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    
-    .nav {
-        margin-inline-start: 0;
-    }
-    .nav-links {
-        display: none; 
-        flex-direction: column;
-        background-color: #333447;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-    }
-    .nav-links.active { 
-        display: flex;
-    }
-    .nav a {
-        margin: 10px 0;
-    }
-    .bars {
-        display: block; 
-        margin-right: 20px;
-        cursor: pointer;
-    }
-    #main {
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 5rem;
-    }
-    .main-left, .main-right {
-        display: none;
-    }
-    .main-middle {
-        margin: 0px 0;
-        order: -1; 
-    }
-    .main-img{
-      margin-right: 3rem;
-    }
-    .pee{
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+      padding: 0 20px;
+  }
+  
+  .logo button {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333447;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 100;
+  }
+  
+  .nav-links.active {
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin: 10px 0;
+  }
+  
+  .nav-links a {
+      color: white;
+  }
+  
+  .bars {
+      display: block;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  
+  #main {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 5rem;
+  }
+  
+  .main-left, .main-right {
+      display: none;
+  }
+  
+  .main-middle {
+      margin: 0px 0;
+      order: -1;
+  }
+  
+  .main-img {
+      margin-right: 0;
+      max-width: 350px;
+  }
+  
+  .pee {
       opacity: 0.4;
-    }
-    .dee{
+  }
+  
+  .dee {
       opacity: 0.4;
-    }
-    .main-text-overlay{
-      font-family: 'Montserrat Alternates', 'san serif' ;
+  }
+  
+  .main-text-overlay {
+      font-family: 'Montserrat Alternates', sans-serif;
       display: inline;
       position: absolute;
       top: 50%;
@@ -547,85 +706,131 @@ nav{
       padding-top: 2rem;
       font-size: 27px;
       text-align: right;
-    }
-    .main-right .social-icons {
-        margin-top: 20px;
-    }
-    .highlight {
+  }
+  
+  .main-right .social-icons {
+      margin-top: 20px;
+  }
+  
+  .highlight {
       font-size: 16px;
-    }
-
-    #about {
-        padding: 40px 20px;
-    }
-    .about-me-header h2 {
-        font-size: 2.5rem;
-    }
-    .intro-paragraph, .details-paragraph {
-        font-size: 1rem;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    #workflow {
-        padding: 20px;
-    }
-    .workflow-header h2 {
-        font-size: 2rem;
-    }
-    .workflow-step p {
-        padding-right: 0;
-    }
-    .workflow-step ul {
-        padding-top: 0.5rem;
-        padding-right: 0;
-        padding-left: 20px;
-    }
-
-    .tools {
-        flex-wrap: wrap;
-        margin-top: 2rem;
-    }
-    .tool {
-        margin: 10px;
-    }
-    .tool img {
-        width: 60px; 
-    }
-
-    #contact {
-        flex-direction: column;
-        margin-top: 5rem;
-        align-items: center;
-        text-align: center;
-    }
-    .left, .right {
-        margin: 20px;
-    }
-    .left h1, .right h2 {
-        font-size: 2rem;
-    }
-    .form {
-        flex-direction: column;
-    }
-    .form-group {
-        margin-right: 0;
-    }
-    .right button {
-        padding: 0.7rem 3rem;
-        margin-left: 0;
-    }
+  }
+  
+  #about {
+      padding: 40px 20px;
+  }
+  
+  .about-me-header h2 {
+      font-size: 2.5rem;
+  }
+  
+  .intro-paragraph, .details-paragraph {
+      font-size: 1rem;
+      margin-left: 0;
+      text-align: center;
+  }
+  
+  #workflow {
+      padding: 20px;
+  }
+  
+  .workflow-header h2 {
+      font-size: 2.2rem;
+  }
+  
+  .workflow-step p {
+      padding-right: 0;
+  }
+  
+  .workflow-step ul {
+      padding-top: 0.5rem;
+      padding-right: 0;
+      padding-left: 20px;
+  }
+  
+  .tools {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+  }
+  
+  .tool {
+      margin: 10px;
+  }
+  
+  .tool img {
+      width: 70px;
+      height: 70px;
+  }
+  
+  #contact {
+      flex-direction: column;
+      margin-top: 5rem;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .left, .right {
+      margin: 20px;
+      width: 80%;
+  }
+  
+  .left h1, .right h2 {
+      font-size: 2rem;
+  }
+  
+  .form {
+      flex-direction: column;
+  }
+  
+  .form-group {
+      margin-right: 0;
+  }
+  
+  .right button {
+      padding: 0.7rem 3rem;
+      margin-left: 0;
+  }
 }
 
-@media (max-width: 576px) {
-  body{
-    font-size: 14px;
+  @media (max-width: 768px) {
+  .bars {
+      display: block;
+      z-index: 1001;
+      margin-left: 14rem;
   }
- }
 
-
-@media (max-width: 768px) {
-  body{
-    font-size: 16px;
+  .nav-links {
+      display: none;
   }
- }
+
+  .main-right {
+      display: none;
+  }
+}
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+      padding: 0 30px;
+  }
+  
+  .main-text-overlay {
+      font-size: 24px;
+  }
+  
+  .tool img {
+      width: 70px;
+      height: 70px;
+  }
+  .bars {
+      display: block;
+      z-index: 1001;
+  }
+  
+  .nav-links {
+      display: none;
+  }
+  
+  .main-right {
+      font-size: 0.9rem;
+  }
+}

@@ -27,23 +27,23 @@ form.addEventListener("submit", async function (e) {
   }
 });
 
-const barsMenu = document.querySelector(".bars-menu");
-const offScreenMenu = document.querySelector(".off-screen-menu");
+const openBtn = document.getElementById('open-btn');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+const barsMenu = document.querySelector('.bars-menu');
 
-barsMenu.addEventListener("click", () => {
-  barsMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+openBtn.addEventListener('click', () => {
+    offScreenMenu.classList.toggle('active');
 });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const openBtn = document.getElementById("open-btn");
-//   const closeBtn = document.getElementById("close-btn");
-//   const mobileMenu = document.getElementById("mobile-menu");
 
-//   openBtn.addEventListener("click", () => {
-//     mobileMenu.classList.add("active");
-//   });
+const menuLinks = document.querySelectorAll('.off-screen-menu a');
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        offScreenMenu.classList.remove('active');
+    });
+});
 
-//   closeBtn.addEventListener("click", () => {
-//     mobileMenu.classList.remove("active");
-//   });
-// });
+document.addEventListener('click', (e) => {
+    if (!offScreenMenu.contains(e.target) && !openBtn.contains(e.target)) {
+        offScreenMenu.classList.remove('active');
+    }
+});
