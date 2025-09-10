@@ -397,12 +397,24 @@ textarea {
   background: #23c56e;
   color: #000;
 }
+#formMessage{
+  color: green; 
+  font-weight: bold; 
+  display: none; 
+  margin-top: 10px;
+}
 
 
 
 
 @media (max-width: 480px) {
-    .off-screen-menu {
+  h1 h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .off-screen-menu {
   position: fixed;
   top: 0;
   right: -450%;
@@ -605,23 +617,15 @@ nav{
     }
 }
 
-/* @media (max-width: 576px) {
-  .main-text-overlay{
-    font-size: 33px;
+@media (max-width: 576px) {
+  body{
+    font-size: 14px;
   }
  }
 
 
 @media (max-width: 768px) {
-  .main-text-overlay{
-    font-size: 43px;
+  body{
+    font-size: 16px;
   }
  }
-
-
-@media (max-width: 992px) { 
-  .main-img{
-    width: 80%;
-    height: auto;
-  }
-} */
