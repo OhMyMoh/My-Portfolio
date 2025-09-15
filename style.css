@@ -107,7 +107,7 @@ body{
     color: #23c56e;
     border: 0;
     border-radius: 10%;
-    margin-left: 10rem;
+    margin-right: 11rem;
     margin-top: 20px;
     padding: 6px;
     cursor: pointer;
@@ -624,6 +624,55 @@ textarea {
   .right button {
       padding: 0.7rem 3rem;
       margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .header {
+    padding: 0 15px;
+  }
+  
+  #main {
+    padding: 30px 15px;
+  }
+  
+  .main-img {
+    max-width: 380px;
+  }
+  
+  .main-text-overlay {
+    font-size: 22px;
+    width: 85%;
+  }
+  
+  #about {
+    padding: 45px 25px;
+  }
+  
+  .about-me-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  #workflow {
+    padding: 30px 25px;
+  }
+  
+  #contact {
+    padding: 20px;
+  }
+  
+  .left, .right {
+    width: 85%;
+  }
+  
+  .right button {
+    padding: 0.8rem 3.2rem;
+  }
+  
+  .tool img {
+    width: 65px;
+    height: 65px;
   }
 }
 
