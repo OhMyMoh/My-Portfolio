@@ -1,181 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('fonts/Montserrat-Regular.woff') format('woff');
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat Alternates';
-  src: url('fonts/MontserratAlternates-Regular.woff2') format('woff2'),
-       url('fonts/MontserratAlternates-Regular.woff') format('woff');
+  font-family: "Montserrat Alternates";
+  src: url("fonts/MontserratAlternates-Regular.woff2") format("woff2"),
+    url("fonts/MontserratAlternates-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background-color: #333447;
-    width: 100%;
+body {
+  background-color: #333447;
+  width: 100%;
 }
 
 .bars {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .off-screen-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    max-width: 450px;
-    height: 100vh;
-    background-color: #1e1e2f;
-    color: #fff;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  max-width: 450px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .off-screen-menu.active {
-    right: 0;
+  right: 0;
 }
 
 .off-screen-menu ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .off-screen-menu ul li {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .off-screen-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 .off-screen-menu ul li a:hover {
-    color: #23c56e;
+  color: #23c56e;
 }
 
 .contact-info {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-info p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .contact-icons {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .contact-icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
+  margin: 0 10px;
+  font-size: 1.5rem;
 }
 
 .language-selector {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-.logo button{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 30px;
-    font-weight: 20px;
-    font-style: italic;
-    background-color: #333447;
-    color: #23c56e;
-    border: 0;
-    border-radius: 10%;
-    margin-right: 11rem;
-    margin-top: 20px;
-    padding: 6px;
-    cursor: pointer;
+.logo button {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 30px;
+  font-weight: 20px;
+  font-style: italic;
+  background-color: #333447;
+  color: #23c56e;
+  border: 0;
+  border-radius: 10%;
+  margin-right: 11rem;
+  margin-top: 20px;
+  padding: 6px;
+  cursor: pointer;
 }
-.header{
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333447;
-    z-index: 1000;
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333447;
+  z-index: 1000;
 }
-.header:hover{
-    color: #23c56e;
+.header:hover {
+  color: #23c56e;
 }
 
-.nav{
-    margin-inline-start: 20rem;
-    margin-top: 30px;
+.nav {
+  margin-inline-start: 20rem;
+  margin-top: 30px;
 }
-.nav-links{
+.nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.nav a{
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color:  rgb(234, 227, 227);
-    margin-right: 7rem;
-    font-weight: bold;
+.nav a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: rgb(234, 227, 227);
+  margin-right: 7rem;
+  font-weight: bold;
 }
-.nav a:hover{
+.nav a:hover {
   color: #23c56e;
 }
-.bars{
-  display: none; 
+.bars {
+  display: none;
   font-size: 2rem;
   color: #23c56e;
   cursor: pointer;
 }
-section{
-    min-height: 100vh;
-    padding: 80px 20px;
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
 }
 
-#main{
-    display: flex;
-    justify-content: center;
-    color:  rgb(234, 227, 227);
-    margin-bottom: 20rem;
+#main {
+  display: flex;
+  justify-content: center;
+  color: rgb(234, 227, 227);
+  margin-bottom: 20rem;
 }
-.main-left{
-    font-size: 22px;
-    font-style: oblique;
-    line-height: 3.2;
-    margin-left: 40px;
-    margin-top: 6rem;
+.main-left {
+  font-size: 22px;
+  font-style: oblique;
+  line-height: 3.2;
+  margin-left: 40px;
+  margin-top: 6rem;
 }
-.main-left h1{
-  font-family: 'Montserrat Alternates', sans-serif;
+.main-left h1 {
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.main-left p{
-  font-family: 'Montserrat', sans-serif;
+.main-left p {
+  font-family: "Montserrat", sans-serif;
 }
-.main-left button{
-  font-family: 'Montserrat', sans-serif;
+.main-left button {
+  font-family: "Montserrat", sans-serif;
   padding: 0.8rem 3rem;
   border-radius: 10px;
   background-color: #23c56e;
@@ -190,106 +190,101 @@ section{
 
 .intro {
   font-size: 16px;
-  
 }
-.main-middle{
-    margin-top: 50px;
-    margin-left: 30px;
+.main-middle {
+  margin-top: 50px;
+  margin-left: 30px;
 }
 .main-middle-container {
-    position: relative; 
-    width: 100%;
-    max-width: 800px;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
 }
-.main-text-overlay{
+.main-text-overlay {
   display: none;
 }
 .main-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-.main-right{
-    font-size: 20px;
-    font-weight: 10px;
-    font-style: oblique;
-    line-height: 2.2;
-    margin-top: 10rem;
-    margin-right: 40px;
+.main-right {
+  font-size: 20px;
+  font-weight: 10px;
+  font-style: oblique;
+  line-height: 2.2;
+  margin-top: 10rem;
+  margin-right: 40px;
 }
-.main-right h2{
-    font-family: 'Montserrat Alternates', sans-serif;
+.main-right h2 {
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.main-right p{
-    font-family: 'Montserrat', sans-serif;
+.main-right p {
+  font-family: "Montserrat", sans-serif;
 }
-.main button{
-    padding: 10px 22px;
-    background-color: rgb(214, 97, 237);
-    border: 0;
-    border-radius: 5%;
+.main button {
+  padding: 10px 22px;
+  background-color: rgb(214, 97, 237);
+  border: 0;
+  border-radius: 5%;
 }
-.main button:hover{
-    background-color: rgb(44, 38, 58);
+.main button:hover {
+  background-color: rgb(44, 38, 58);
 }
-.main button:active{
-    background-color: rgb(64, 14, 79);
+.main button:active {
+  background-color: rgb(64, 14, 79);
 }
 
-#workflow{
+#workflow {
   display: flex;
   align-items: normal;
   flex-direction: column;
   padding: 40px;
   margin-top: 3rem;
-  background-color: #333447; 
-  color: #fff; 
+  background-color: #333447;
+  color: #fff;
 }
 
 .workflow-header h2 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 2.5rem; 
-  font-weight: 600; 
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-top: 4rem;
   margin-bottom: 30px;
-  border-bottom: 2px solid #555; 
+  border-bottom: 2px solid #555;
   padding-bottom: 10px;
 }
 
-
 .workflow-container {
   position: relative;
-  
 }
-
 
 .workflow-step {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   position: relative;
 }
 
-.workflow-steps{
+.workflow-steps {
   margin-top: 2rem;
 }
 
 .step-number {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #a4a4a4; 
+  color: #a4a4a4;
   margin-right: 20px;
   padding-bottom: 5rem;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
-
 
 .workflow-step p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  max-width: 100%; 
+  max-width: 100%;
 }
-.workflow-step ul{
-  font-family: 'Montserrat', sans-serif;
+.workflow-step ul {
+  font-family: "Montserrat", sans-serif;
   padding-top: 5rem;
   padding-right: 20rem;
 }
@@ -301,62 +296,58 @@ section{
 }
 
 .workflow-complete p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: #23c56e; 
-  text-transform: uppercase; 
-  margin-left: 50px; 
+  color: #23c56e;
+  text-transform: uppercase;
+  margin-left: 50px;
 }
 
-
-
-#about{
-  padding: 80px 100px; 
-  background-color: #333447; 
-  color: #e0e0e0; 
-  overflow: hidden; 
-  position: relative; 
+#about {
+  padding: 80px 100px;
+  background-color: #333447;
+  color: #e0e0e0;
+  overflow: hidden;
+  position: relative;
 }
-
 
 .about-me-header h2 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 3.5rem; 
-  font-weight: 700; 
-  color: #23c56e; 
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #23c56e;
   margin-bottom: 50px;
   text-align: left;
 }
 
 .about-me-content {
-  flex-direction: column; 
-  gap: 40px; 
+  flex-direction: column;
+  gap: 40px;
 }
-.about-me-content p{
-  font-family: 'Montserrat', sans-serif;
+.about-me-content p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro-paragraph {
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   line-height: 1.8;
-  max-width: 800px; 
-  margin-left: 3rem; 
+  max-width: 800px;
+  margin-left: 3rem;
   text-align: left;
-  font-weight: 500; 
+  font-weight: 500;
 }
-
 
 .details-paragraph {
-  font-size: 1rem; 
+  font-size: 1rem;
   line-height: 1.7;
-  max-width: 800px; 
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  color: #b0b0b0; 
-  margin-top: 30px; 
+  color: #b0b0b0;
+  margin-top: 30px;
 }
 
-.tools{
+.tools {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,14 +355,14 @@ section{
   margin-top: 2rem;
 }
 
-#contact{
-    display: flex;
-    justify-content: center;
-    color: rgb(234, 227, 227);
-    margin-top: 15rem;
+#contact {
+  display: flex;
+  justify-content: center;
+  color: rgb(234, 227, 227);
+  margin-top: 15rem;
 }
-#contact p{
-    font-family: 'Montserrat', sans-serif;
+#contact p {
+  font-family: "Montserrat", sans-serif;
 }
 .left {
   flex: 1;
@@ -381,12 +372,12 @@ section{
 .left h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .left p {
   margin-bottom: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .social-icons a {
@@ -397,9 +388,8 @@ section{
 }
 
 .social-icons a:hover {
-  color: #b0b0b0; 
+  color: #b0b0b0;
 }
-
 
 .social-icons a {
   margin-right: 10px;
@@ -419,14 +409,14 @@ section{
 .right h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-.form{
+.form {
   display: flex;
 }
 .form-group {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
   margin-right: 3rem;
 }
@@ -436,7 +426,8 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #666;
@@ -465,421 +456,392 @@ textarea {
   background: #23c56e;
   color: #000;
 }
-#formMessage{
-  color: green; 
-  font-weight: bold; 
-  display: none; 
+#formMessage {
+  color: green;
+  font-weight: bold;
+  display: none;
   margin-top: 10px;
 }
 
-
-
-
-
 @media (max-width: 480px) {
   .header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .logo button {
-      margin-top: 10px;
-  }
-  
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #333447;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      padding: 20px 0;
-      z-index: 100;
-  }
-  
-  .nav-links.active {
-      display: flex;
-  }
-  
-  .nav-links li {
-      margin: 10px 0;
-  }
-  
-  .nav-links a {
-      color: white;
-  }
-  
-  .bars {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-  }
-  
-  #main {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 5rem;
-  }
-  
-  .main-left, .main-right {
-      display: none;
-  }
-  
-  .main-middle {
-      order: -1;
-      margin: 20px 0;
-  }
-  
-  .main-img {
-      margin-right: 0;
-  }
-  
-  .main-text-overlay {
-      font-size: 20px;
-      padding: 10px;
-      text-align: center;
-      width: 90%;
-  }
-  
-  .pee, .dee {
-      font-size: 48px;
-  }
-  
-  .highlight {
-      font-size: 14px;
-  }
-  
-  #about {
-      padding: 40px 20px;
-  }
-  
-  .about-me-header h2 {
-      font-size: 2rem;
-  }
-  
-  .intro-paragraph, .details-paragraph {
-      margin-left: 0;
-      text-align: center;
-  }
-  
-  #workflow {
-      padding: 40px 20px;
-  }
-  
-  .workflow-header h2 {
-      font-size: 2rem;
-  }
-  
-  .workflow-step p {
-      padding-right: 0;
-  }
-  
-  .workflow-step ul {
-      padding-top: 0.5rem;
-      padding-right: 0;
-      padding-left: 20px;
-  }
-  
-  .tools {
-      flex-wrap: wrap;
-      margin-top: 2rem;
-  }
-  
-  .tool {
-      margin: 10px;
-  }
-  
-  .tool img {
-      width: 60px;
-      height: 60px;
-  }
-  
-  #contact {
-      flex-direction: column;
-      margin-top: 5rem;
-      align-items: center;
-      text-align: center;
-  }
-  
-  .left, .right {
-      margin: 20px;
-      width: 100%;
-  }
-  
-  .left h1, .right h2 {
-      font-size: 1.8rem;
-  }
-  
-  .form {
-      flex-direction: column;
-  }
-  
-  .form-group {
-      margin-right: 0;
-  }
-  
-  .right button {
-      padding: 0.7rem 3rem;
-      margin-left: 0;
-  }
-}
 
-@media (max-width: 576px) {
-  
-  .header {
-    padding: 0 15px;
+  .logo button {
+    margin-top: 10px;
+    margin-left: 0.5rem;
   }
-  
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333447;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 100;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: white;
+  }
+
+  .bars {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
   #main {
-    padding: 30px 15px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
   }
+
+  .main-left,
+  .main-right {
+    display: none;
+  }
+
+  .main-middle {
+    order: -1;
+    margin: 20px 0;
+  }
+
   
   .main-img {
-    max-width: 380px;
+    margin-right: 0;
   }
-  
+
   .main-text-overlay {
-    font-size: 22px;
-    width: 85%;
+    display: block;
+    overlay: hidden;
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+    width: 90%;
+    font-family: "Montserrat Alternates", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding-top: 2rem; */
   }
-  
+
+  .pee,
+  .dee {
+    font-size: 40px;
+    opacity: 0.4;
+  }
+
+  .highlight {
+    font-size: 14px;
+  }
+
   #about {
-    padding: 45px 25px;
+    padding: 40px 20px;
   }
-  
+
   .about-me-header h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-  
+
+  .intro-paragraph,
+  .details-paragraph {
+    margin-left: 0;
+    text-align: center;
+  }
+
   #workflow {
-    padding: 30px 25px;
+    padding: 40px 20px;
   }
-  
-  #contact {
-    padding: 20px;
+
+  .workflow-header h2 {
+    font-size: 2rem;
   }
-  
-  .left, .right {
-    width: 85%;
+
+  .workflow-step p {
+    padding-right: 0;
   }
-  
-  .right button {
-    padding: 0.8rem 3.2rem;
+
+  .workflow-step ul {
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-left: 20px;
   }
-  
+
+  .tools {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .tool {
+    margin: 10px;
+  }
+
   .tool img {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #contact {
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .left h1,
+  .right h2 {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-right: 0;
+  }
+
+  .right button {
+    padding: 0.7rem 3rem;
+    margin-left: 0;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .header {
-      padding: 0 20px;
+    padding: 0 20px;
   }
-  
+
   .logo button {
-      margin-left: 0;
-      margin-top: 10px;
+    margin-left: 0;
+    margin-top: 10px;
   }
-  
+
   .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #333447;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      padding: 20px 0;
-      z-index: 100;
+    display: none;
+    flex-direction: column;
+    background-color: #333447;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 100;
   }
-  
+
   .nav-links.active {
-      display: flex;
+    display: flex;
   }
-  
+
   .nav-links li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
-  
+
   .nav-links a {
-      color: white;
+    color: white;
   }
-  
+
   .bars {
-      display: block;
-      margin-right: 20px;
-      cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
   }
-  
+
   #main {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 5rem;
+     flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
   }
-  
-  .main-left, .main-right {
-      display: none;
+
+  .main-left,
+  .main-right {
+    display: none;
   }
-  
+
   .main-middle {
-      margin: 0px 0;
-      order: -1;
+    margin: 0px 0;
+    order: -1;
   }
-  
+
   .main-img {
-      margin-right: 0;
-      max-width: 350px;
+    margin-right: 0;
+    max-width: 350px;
   }
-  
+
   .pee {
-      opacity: 0.4;
+    opacity: 0.4;
   }
-  
+
   .dee {
-      opacity: 0.4;
+    opacity: 0.4;
   }
-  
+
   .main-text-overlay {
-      font-family: 'Montserrat Alternates', sans-serif;
-      display: inline;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding-top: 2rem;
-      font-size: 27px;
-      text-align: right;
+    font-family: "Montserrat Alternates", sans-serif;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 2rem;
+    font-size: 27px;
+    text-align: right;
   }
-  
+
   .main-right .social-icons {
-      margin-top: 20px;
+    margin-top: 20px;
   }
-  
+
   .highlight {
-      font-size: 16px;
+    font-size: 16px;
   }
-  
+
   #about {
-      padding: 40px 20px;
+    padding: 40px 20px;
   }
-  
+
   .about-me-header h2 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  
-  .intro-paragraph, .details-paragraph {
-      font-size: 1rem;
-      margin-left: 0;
-      text-align: center;
+
+  .intro-paragraph,
+  .details-paragraph {
+    font-size: 1rem;
+    margin-left: 0;
+    text-align: center;
   }
-  
+
   #workflow {
-      padding: 20px;
+    padding: 20px;
   }
-  
+
   .workflow-header h2 {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
   }
-  
+
   .workflow-step p {
-      padding-right: 0;
+    padding-right: 0;
   }
-  
+
   .workflow-step ul {
-      padding-top: 0.5rem;
-      padding-right: 0;
-      padding-left: 20px;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-left: 20px;
   }
-  
+
   .tools {
-      flex-wrap: wrap;
-      margin-top: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
   }
-  
+
   .tool {
-      margin: 10px;
+    margin: 10px;
   }
-  
+
   .tool img {
-      width: 70px;
-      height: 70px;
+    width: 70px;
+    height: 70px;
   }
-  
+
   #contact {
-      flex-direction: column;
-      margin-top: 5rem;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
   }
-  
-  .left, .right {
-      margin: 20px;
-      width: 80%;
+
+  .left,
+  .right {
+    margin: 20px;
+    width: 80%;
   }
-  
-  .left h1, .right h2 {
-      font-size: 2rem;
+
+  .left h1,
+  .right h2 {
+    font-size: 2rem;
   }
-  
+
   .form {
-      flex-direction: column;
+    flex-direction: column;
   }
-  
+
   .form-group {
-      margin-right: 0;
+    margin-right: 0;
   }
-  
+
   .right button {
-      padding: 0.7rem 3rem;
-      margin-left: 0;
+    padding: 0.7rem 3rem;
+    margin-left: 0;
   }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .bars {
-      display: block;
-      z-index: 1001;
-      margin-left: 14rem;
+    display: block;
+    z-index: 1001;
+    margin-left: 14rem;
   }
 
   .nav-links {
-      display: none;
+    display: none;
   }
 
   .main-right {
-      display: none;
+    display: none;
   }
 }
 
-  @media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
-      padding: 0 30px;
+    padding: 0 30px;
   }
-  
+
   .main-text-overlay {
-      font-size: 24px;
+    font-size: 24px;
   }
-  
+
   .tool img {
-      width: 70px;
-      height: 70px;
+    width: 70px;
+    height: 70px;
   }
   .bars {
-      display: block;
-      z-index: 1001;
+    display: block;
+    z-index: 1001;
   }
-  
+
   .nav-links {
-      display: none;
+    display: none;
   }
-  
+
   .main-right {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
